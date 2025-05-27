@@ -1,5 +1,6 @@
-nums = [5 ,7 ,10 ,26]
-if len(nums) > 1:
-    nums.insert(0, nums[-1])
-    nums.pop()
-print(nums)
+nums = [1, 2, 3, 4, 5]
+
+mid = (len(nums) + 1) // 2
+result = [nums[:mid], nums[mid:]]
+
+print(result)
