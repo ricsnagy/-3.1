@@ -1,15 +1,5 @@
-num1 = float(input("Введіть перше число: "))
-operation = input("Введіть операцію (+, -, *, /): ")
-num2 = float(input("Введіть друге число: "))
-if operation == "+":
-    result = num1 + num2
-elif operation == "-":
-    result = num1 - num2
-elif operation == "*":
-    result = num1 * num2
-elif operation == "/":
-    if num2 == 0:
-        print("Ділити на 0 не можна!")#
-    else:
-        result = num1 / num2
-        print( result)
+nums = [5 ,7 ,10 ,26]
+if len(nums) > 1:
+    nums.insert(0, nums[-1])
+    nums.pop()
+print(nums)
